@@ -64,7 +64,8 @@ class ViewController: UIViewController {
                 }
                 timer?.tolerance = 0.2
             } else {
-                self.updater?(self.status)
+                timer?.invalidate()
+                updater?(self.status)
             }
         }
     }
