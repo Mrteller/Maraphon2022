@@ -5,16 +5,37 @@ final class WordStore {
     static let shared = WordStore()
     
     var wordsByTopics = [String : [String]]()
+    var currentWordSet = [String]()
+    var recentWords = [String : Int]()
     
     private init() {}
     
-    func words(by topic: String) -> [String] {
+    func randomWord() -> String {
+//        guard let randomIndex = currentWordSet.indices.randomElement() else { return "" }
+//        let word = currentWordSet.remove(at: randomIndex)
+        guard let word = currentWordSet.randomElement()  else { return "" }
+        if recentWords[word] != nil {
+            return randomWord()
+        }
+        recentWords[word] = 4
+        for (key, value) in recentWords {
+            let newValue = value - 1
+            if newValue == 0 {
+                recentWords.removeValue(forKey: key)
+            } else {
+                recentWords[key] = newValue
+            }
+        }
+        return word
+    }
+    
+    func setWords(by topic: String) {
         if let words = wordsByTopics[topic] {
-            return words
+            currentWordSet = words
         } else {
             let words = load(by: topic)
             wordsByTopics[topic] = words
-            return words
+            currentWordSet = words
         }
     }
     
