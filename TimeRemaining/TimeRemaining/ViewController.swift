@@ -12,16 +12,17 @@ enum Status: CaseIterable {
 }
 
 class State {
-    init(status: Status, updater: ((Status) -> Void)? = nil, timeRemaining: Int = 60) {
+    init(status: Status, updater: ((Status) -> Void)? = nil, timeLimit: Int = 60) {
         self.status = status
         self.updater = updater
-        self.timeRemaining = timeRemaining
+        self.timeLimit = timeLimit
+        self.timeRemaining = timeLimit
     }
     
     var status: Status {
         didSet {
             if case .waiting = status {
-                timeRemaining = 60
+                timeRemaining = timeLimit
                 timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
                     self.updater?(self.status)
                     if self.timeRemaining == 0 {
@@ -37,7 +38,8 @@ class State {
         }
     }
     var updater: ((Status) -> Void)?
-    var timeRemaining = 60
+    var timeRemaining: Int
+    private var timeLimit: Int
     private var timer: Timer?
     
 }
