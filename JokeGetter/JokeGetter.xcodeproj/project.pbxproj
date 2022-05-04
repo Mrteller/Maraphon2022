@@ -18,6 +18,7 @@
 		DA87B616281FEBF300A43642 /* JokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B614281FEBF300A43642 /* JokeStore.swift */; };
 		DA87B618281FEED900A43642 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B617281FEED900A43642 /* NetworkManager.swift */; };
 		DA87B61B281FF52600A43642 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B61A281FF52600A43642 /* Joke.swift */; };
+		DA9B39F82822F5F1009BA30A /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B39F72822F5F1009BA30A /* WordStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DA87B614281FEBF300A43642 /* JokeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeStore.swift; sourceTree = "<group>"; };
 		DA87B617281FEED900A43642 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DA87B61A281FF52600A43642 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		DA9B39F72822F5F1009BA30A /* WordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		DA87B5FB281FE72300A43642 /* JokeGetter */ = {
 			isa = PBXGroup;
 			children = (
+				DA9B39F62822F56C009BA30A /* WordService */,
 				DA87B619281FEFBE00A43642 /* Networking */,
 				DA87B612281FEBF300A43642 /* JokeService */,
 				DA87B5FC281FE72300A43642 /* AppDelegate.swift */,
@@ -96,6 +99,14 @@
 				DA87B617281FEED900A43642 /* NetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DA9B39F62822F56C009BA30A /* WordService */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B39F72822F5F1009BA30A /* WordStore.swift */,
+			);
+			path = WordService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9B39F82822F5F1009BA30A /* WordStore.swift in Sources */,
 				DA87B601281FE72300A43642 /* ViewController.swift in Sources */,
 				DA87B5FD281FE72300A43642 /* AppDelegate.swift in Sources */,
 				DA87B611281FEB0900A43642 /* Endpoint.swift in Sources */,
