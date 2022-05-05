@@ -18,7 +18,7 @@ final class WordStore {
         if recentWords[word] != nil {
             return randomWord()
         }
-        recentWords[word] = preventRepetitionRounds - 1
+        recentWords[word] = preventRepetitionRounds + 1
         for (key, value) in recentWords {
             let newValue = value - 1
             if newValue == 0 {
