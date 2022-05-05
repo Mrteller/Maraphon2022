@@ -7,6 +7,7 @@ final class WordStore {
     var wordsByTopics = [String : [String]]()
     var currentWordSet = [String]()
     var recentWords = [String : Int]()
+    var preventRepetitionRounds = 4
     
     private init() {}
     
@@ -17,7 +18,7 @@ final class WordStore {
         if recentWords[word] != nil {
             return randomWord()
         }
-        recentWords[word] = 4
+        recentWords[word] = preventRepetitionRounds - 1
         for (key, value) in recentWords {
             let newValue = value - 1
             if newValue == 0 {
@@ -40,7 +41,7 @@ final class WordStore {
     }
     
     func load(by topic: String) -> [String] {
-        guard let url = Bundle.main.url(forResource: topic, withExtension: "txt"),
+        guard let url = Bundle.main.url(forResource: topic, withExtension: "csv"),
               let wordString = try? String(contentsOf: url)
         else { return [] }
         let words = wordString.split(separator: ",").map{ $0.trimmingCharacters(in: .whitespacesAndNewlines)}

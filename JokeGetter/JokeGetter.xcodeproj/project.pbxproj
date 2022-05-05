@@ -19,6 +19,7 @@
 		DA87B618281FEED900A43642 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B617281FEED900A43642 /* NetworkManager.swift */; };
 		DA87B61B281FF52600A43642 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B61A281FF52600A43642 /* Joke.swift */; };
 		DA9B39F82822F5F1009BA30A /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B39F72822F5F1009BA30A /* WordStore.swift */; };
+		DA9B39FA2823C70B009BA30A /* english_words_nouns.csv in Resources */ = {isa = PBXBuildFile; fileRef = DA9B39F92823C70B009BA30A /* english_words_nouns.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DA87B617281FEED900A43642 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DA87B61A281FF52600A43642 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		DA9B39F72822F5F1009BA30A /* WordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
+		DA9B39F92823C70B009BA30A /* english_words_nouns.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english_words_nouns.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +73,11 @@
 				DA9B39F62822F56C009BA30A /* WordService */,
 				DA87B619281FEFBE00A43642 /* Networking */,
 				DA87B612281FEBF300A43642 /* JokeService */,
+				DA9B39FB2823C9D9009BA30A /* Media */,
 				DA87B5FC281FE72300A43642 /* AppDelegate.swift */,
 				DA87B5FE281FE72300A43642 /* SceneDelegate.swift */,
 				DA87B600281FE72300A43642 /* ViewController.swift */,
 				DA87B602281FE72300A43642 /* Main.storyboard */,
-				DA87B605281FE72500A43642 /* Assets.xcassets */,
 				DA87B607281FE72500A43642 /* LaunchScreen.storyboard */,
 				DA87B60A281FE72500A43642 /* Info.plist */,
 			);
@@ -107,6 +109,15 @@
 				DA9B39F72822F5F1009BA30A /* WordStore.swift */,
 			);
 			path = WordService;
+			sourceTree = "<group>";
+		};
+		DA9B39FB2823C9D9009BA30A /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				DA87B605281FE72500A43642 /* Assets.xcassets */,
+				DA9B39F92823C70B009BA30A /* english_words_nouns.csv */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 				DA87B609281FE72500A43642 /* LaunchScreen.storyboard in Resources */,
 				DA87B606281FE72500A43642 /* Assets.xcassets in Resources */,
 				DA87B604281FE72300A43642 /* Main.storyboard in Resources */,
+				DA9B39FA2823C70B009BA30A /* english_words_nouns.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

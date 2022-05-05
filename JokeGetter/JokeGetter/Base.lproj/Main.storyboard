@@ -22,6 +22,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES4-Ma-TF0">
+                                <rect key="frame" x="186.5" y="443" width="41" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0o-jZ-Ifw">
                                 <rect key="frame" x="8" y="831" width="398" height="31"/>
                                 <subviews>
@@ -47,6 +53,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ES4-Ma-TF0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Ly-JU-7HU"/>
+                            <constraint firstItem="ES4-Ma-TF0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1so-xw-g4N"/>
                             <constraint firstItem="CX5-bB-fD1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Lgy-lu-bs6"/>
                             <constraint firstItem="S0o-jZ-Ifw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MMb-9T-9wr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CX5-bB-fD1" secondAttribute="trailing" constant="8" id="TQp-5j-OH6"/>
@@ -57,6 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="jokeLabel" destination="CX5-bB-fD1" id="vEM-UI-n28"/>
+                        <outlet property="wordLabel" destination="ES4-Ma-TF0" id="cCI-uZ-3y6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
