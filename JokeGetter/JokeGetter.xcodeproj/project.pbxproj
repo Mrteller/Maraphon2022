@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA6889C428245223005C89D9 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6889C328245223005C89D9 /* UIImage+.swift */; };
+		DA6889C62824549A005C89D9 /* GradientBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6889C52824549A005C89D9 /* GradientBorderButton.swift */; };
 		DA87B5FD281FE72300A43642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B5FC281FE72300A43642 /* AppDelegate.swift */; };
 		DA87B5FF281FE72300A43642 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B5FE281FE72300A43642 /* SceneDelegate.swift */; };
 		DA87B601281FE72300A43642 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B600281FE72300A43642 /* ViewController.swift */; };
@@ -20,9 +22,12 @@
 		DA87B61B281FF52600A43642 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B61A281FF52600A43642 /* Joke.swift */; };
 		DA9B39F82822F5F1009BA30A /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B39F72822F5F1009BA30A /* WordStore.swift */; };
 		DA9B39FA2823C70B009BA30A /* english_words_nouns.csv in Resources */ = {isa = PBXBuildFile; fileRef = DA9B39F92823C70B009BA30A /* english_words_nouns.csv */; };
+		DA9B3A0528244B96009BA30A /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B3A0428244B96009BA30A /* UIView+Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA6889C328245223005C89D9 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		DA6889C52824549A005C89D9 /* GradientBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBorderButton.swift; sourceTree = "<group>"; };
 		DA87B5F9281FE72300A43642 /* JokeGetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeGetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA87B5FC281FE72300A43642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA87B5FE281FE72300A43642 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		DA87B61A281FF52600A43642 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		DA9B39F72822F5F1009BA30A /* WordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
 		DA9B39F92823C70B009BA30A /* english_words_nouns.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english_words_nouns.csv; sourceTree = "<group>"; };
+		DA9B3A0428244B96009BA30A /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 				DA87B602281FE72300A43642 /* Main.storyboard */,
 				DA87B607281FE72500A43642 /* LaunchScreen.storyboard */,
 				DA87B60A281FE72500A43642 /* Info.plist */,
+				DA9B3A0428244B96009BA30A /* UIView+Border.swift */,
+				DA6889C328245223005C89D9 /* UIImage+.swift */,
+				DA6889C52824549A005C89D9 /* GradientBorderButton.swift */,
 			);
 			path = JokeGetter;
 			sourceTree = "<group>";
@@ -198,8 +207,11 @@
 				DA87B611281FEB0900A43642 /* Endpoint.swift in Sources */,
 				DA87B618281FEED900A43642 /* NetworkManager.swift in Sources */,
 				DA87B5FF281FE72300A43642 /* SceneDelegate.swift in Sources */,
+				DA6889C62824549A005C89D9 /* GradientBorderButton.swift in Sources */,
 				DA87B616281FEBF300A43642 /* JokeStore.swift in Sources */,
 				DA87B61B281FF52600A43642 /* Joke.swift in Sources */,
+				DA6889C428245223005C89D9 /* UIImage+.swift in Sources */,
+				DA9B3A0528244B96009BA30A /* UIView+Border.swift in Sources */,
 				DA87B615281FEBF300A43642 /* JokeEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
