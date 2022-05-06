@@ -16,6 +16,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         WordStore.shared.setWords(by: "english_words_nouns")
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? FancyInfoViewController {
+            vc.sectionTitles = ["Title1", "Title2"]
+            vc.sectionRows = [
+            ["row1"],
+            ["row2.1", "row2.2"]
+            ]
+        }
+    }
 
     @IBAction func fetchWithCompletion(_ sender: UIButton) {
         showWord()

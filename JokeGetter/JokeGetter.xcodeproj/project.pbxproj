@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA275ECA282594C900A59CF0 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA275EC6282594C900A59CF0 /* InfoCell.swift */; };
+		DA275ECB282594C900A59CF0 /* FancyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA275EC7282594C900A59CF0 /* FancyInfoViewController.swift */; };
+		DA275ECC282594C900A59CF0 /* InfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA275EC9282594C900A59CF0 /* InfoHeader.swift */; };
 		DA6889C428245223005C89D9 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6889C328245223005C89D9 /* UIImage+.swift */; };
 		DA6889C62824549A005C89D9 /* GradientBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6889C52824549A005C89D9 /* GradientBorderButton.swift */; };
 		DA87B5FD281FE72300A43642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87B5FC281FE72300A43642 /* AppDelegate.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA275EC6282594C900A59CF0 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		DA275EC7282594C900A59CF0 /* FancyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyInfoViewController.swift; sourceTree = "<group>"; };
+		DA275EC9282594C900A59CF0 /* InfoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoHeader.swift; sourceTree = "<group>"; };
 		DA6889C328245223005C89D9 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		DA6889C52824549A005C89D9 /* GradientBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBorderButton.swift; sourceTree = "<group>"; };
 		DA87B5F9281FE72300A43642 /* JokeGetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeGetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +63,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA275EC4282594C900A59CF0 /* InfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA275EC7282594C900A59CF0 /* FancyInfoViewController.swift */,
+				DA275EC5282594C900A59CF0 /* Cell */,
+				DA275EC8282594C900A59CF0 /* Header */,
+			);
+			path = InfoViewController;
+			sourceTree = "<group>";
+		};
+		DA275EC5282594C900A59CF0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DA275EC6282594C900A59CF0 /* InfoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DA275EC8282594C900A59CF0 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DA275EC9282594C900A59CF0 /* InfoHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		DA87B5F0281FE72300A43642 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,7 @@
 				DA87B5FC281FE72300A43642 /* AppDelegate.swift */,
 				DA87B5FE281FE72300A43642 /* SceneDelegate.swift */,
 				DA87B600281FE72300A43642 /* ViewController.swift */,
+				DA275EC4282594C900A59CF0 /* InfoViewController */,
 				DA87B602281FE72300A43642 /* Main.storyboard */,
 				DA87B607281FE72500A43642 /* LaunchScreen.storyboard */,
 				DA87B60A281FE72500A43642 /* Info.plist */,
@@ -203,13 +236,16 @@
 			files = (
 				DA9B39F82822F5F1009BA30A /* WordStore.swift in Sources */,
 				DA87B601281FE72300A43642 /* ViewController.swift in Sources */,
+				DA275ECB282594C900A59CF0 /* FancyInfoViewController.swift in Sources */,
 				DA87B5FD281FE72300A43642 /* AppDelegate.swift in Sources */,
 				DA87B611281FEB0900A43642 /* Endpoint.swift in Sources */,
 				DA87B618281FEED900A43642 /* NetworkManager.swift in Sources */,
+				DA275ECC282594C900A59CF0 /* InfoHeader.swift in Sources */,
 				DA87B5FF281FE72300A43642 /* SceneDelegate.swift in Sources */,
 				DA6889C62824549A005C89D9 /* GradientBorderButton.swift in Sources */,
 				DA87B616281FEBF300A43642 /* JokeStore.swift in Sources */,
 				DA87B61B281FF52600A43642 /* Joke.swift in Sources */,
+				DA275ECA282594C900A59CF0 /* InfoCell.swift in Sources */,
 				DA6889C428245223005C89D9 /* UIImage+.swift in Sources */,
 				DA9B3A0528244B96009BA30A /* UIView+Border.swift in Sources */,
 				DA87B615281FEBF300A43642 /* JokeEndpoint.swift in Sources */,
