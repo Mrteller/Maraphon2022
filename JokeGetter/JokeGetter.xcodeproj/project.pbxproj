@@ -63,14 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA275EC4282594C900A59CF0 /* InfoViewController */ = {
+		DA275EC4282594C900A59CF0 /* RulesViewController */ = {
 			isa = PBXGroup;
 			children = (
 				DA275EC7282594C900A59CF0 /* FancyInfoViewController.swift */,
 				DA275EC5282594C900A59CF0 /* Cell */,
 				DA275EC8282594C900A59CF0 /* Header */,
 			);
-			path = InfoViewController;
+			path = RulesViewController;
 			sourceTree = "<group>";
 		};
 		DA275EC5282594C900A59CF0 /* Cell */ = {
@@ -115,7 +115,7 @@
 				DA87B5FC281FE72300A43642 /* AppDelegate.swift */,
 				DA87B5FE281FE72300A43642 /* SceneDelegate.swift */,
 				DA87B600281FE72300A43642 /* ViewController.swift */,
-				DA275EC4282594C900A59CF0 /* InfoViewController */,
+				DA275EC4282594C900A59CF0 /* RulesViewController */,
 				DA87B602281FE72300A43642 /* Main.storyboard */,
 				DA87B607281FE72500A43642 /* LaunchScreen.storyboard */,
 				DA87B60A281FE72500A43642 /* Info.plist */,

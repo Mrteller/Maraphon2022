@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? FancyInfoViewController {
+        if let vc = segue.destination as? RulesViewController {
             vc.sectionTitles = ["Title1", "Title2"]
             vc.sectionRows = [
             ["row1"],

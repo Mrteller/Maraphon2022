@@ -1,6 +1,6 @@
 import UIKit
 
-class FancyInfoViewController: UIViewController {
+class RulesViewController: UIViewController {
     
     // MARK: Outlets
     
@@ -82,7 +82,7 @@ class FancyInfoViewController: UIViewController {
 
 // MARK: - Extensions
 
-extension FancyInfoViewController: UITableViewDataSource {
+extension RulesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         sectionTitles[section]
@@ -127,13 +127,13 @@ extension FancyInfoViewController: UITableViewDataSource {
     }
 }
 
-extension FancyInfoViewController: UITableViewDelegate {
+extension RulesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
-extension FancyInfoViewController: UIScrollViewDelegate {
+extension RulesViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard let header = tableView.tableHeaderView as? HeaderTableView else { return }
         header.scrollViewDidScroll(scrollView: tableView)
